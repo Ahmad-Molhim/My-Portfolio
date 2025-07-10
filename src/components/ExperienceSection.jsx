@@ -13,7 +13,7 @@ const experiences = [
   {
     role: "Electrical Subteam Member",
     company: "McMaaster Aerial Robotics and Drone Team",
-    color: "text-green-400", // You can switch this to a CSS variable if you define it
+    color: "text-green-400",
     date: "May 2025 – Present",
     description:
       "Designing custom PCBs for drone systems like PDBs, ensuring full compatibility across all electronic components.",
@@ -22,7 +22,7 @@ const experiences = [
   {
     role: "PCB Design Intern",
     company: "Jitterware",
-    color: "text-red-400", // Same here — define a red in your HSL scheme if needed
+    color: "text-red-400",
     date: "Feb. 2025 – Mar. 2025",
     description:
       "Designed a cost-efficient custom PCB for a Hall-effect keyboard using KiCad",
@@ -33,29 +33,21 @@ const experiences = [
 export default function ExperienceSection() {
   return (
     <section
-      className="py-16 px-6 relative z-10"
       id="experience"
-      style={{
-        backgroundColor: "hsl(var(--background))",
-        color: "hsl(var(--foreground))",
-      }}
+      className="min-h-screen py-24 px-6 flex flex-col justify-center items-center bg-[hsl(var(--background))] text-[hsl(var(--foreground))]"
     >
-      <h2 className="text-4xl font-bold mb-14 text-center">Experience</h2>
-      <div className="flex flex-col gap-10 max-w-4xl mx-auto">
+      <h2 className="text-5xl font-bold mb-16 text-center">Experience</h2>
+
+      <div className="flex flex-col gap-12 w-full max-w-6xl">
         {experiences.map((exp, idx) => (
           <div
             key={idx}
-            className="relative p-6 rounded-2xl border transition duration-300 group"
-            style={{
-              backgroundColor: "hsl(var(--card))",
-              borderColor: "hsl(var(--border))",
-              boxShadow: "0 0 0 transparent",
-            }}
+            className="relative p-8 rounded-2xl border transition duration-300 group bg-[hsl(var(--card))] border-[hsl(var(--border))]"
           >
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start gap-4 flex-wrap">
               <div>
-                <h3 className="text-2xl font-semibold">{exp.role}</h3>
-                <p className={`mt-1 font-medium ${exp.color}`}>
+                <h3 className="text-2xl md:text-3xl font-semibold">{exp.role}</h3>
+                <p className={`mt-1 text-lg font-medium ${exp.color}`}>
                   {exp.company}
                 </p>
               </div>
@@ -67,35 +59,21 @@ export default function ExperienceSection() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[hsl(var(--foreground))] transition"
                 >
-                  <ExternalLink />
+                  <ExternalLink className="w-5 h-5 md:w-6 md:h-6" />
                 </a>
               )}
             </div>
 
-            <div
-              className="mt-3 inline-block text-sm px-3 py-1 rounded-md"
-              style={{
-                backgroundColor: "hsl(var(--border) / 0.3)",
-                color: "hsl(var(--foreground) / 0.7)",
-              }}
-            >
+            <div className="mt-4 inline-block text-sm md:text-base px-4 py-1 rounded-md bg-[hsl(var(--border)/0.3)] text-[hsl(var(--foreground)/0.7)]">
               {exp.date}
             </div>
 
-            <p
-              className="mt-4 text-sm"
-              style={{ color: "hsl(var(--foreground) / 0.85)" }}
-            >
+            <p className="mt-6 text-base md:text-lg leading-relaxed text-[hsl(var(--foreground)/0.85)]">
               {exp.description}
             </p>
 
             {/* Glow on hover */}
-            <div
-              className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300 opacity-0 group-hover:opacity-100"
-              style={{
-                boxShadow: "0 0 25px hsl(var(--primary) / 0.3)",
-              }}
-            ></div>
+            <div className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300 opacity-0 group-hover:opacity-100 shadow-[0_0_25px_hsl(var(--primary)/0.3)]" />
           </div>
         ))}
       </div>
