@@ -19,7 +19,7 @@ export const Home = () => {
             
             {/* Background Effects */}
 
-            {/* <StarBackground /> */}
+            <StarBackground />
 
             {/* {<BinaryStream/>} */}
 
