@@ -6,21 +6,21 @@ const projectData = {
       title: "Ideal Voltage-Controlled Switch Design",
       description:
         "Designed and tested MOSFET-based voltage-controlled switches to explore real-world deviations from ideal switch behavior.",
-      link: "https://github.com/your-electrical-project",
+      link: "https://github.com/Ahmad-Molhim/Ideal-Voltage-Controlled-Switch-Design",
       image: "/images/Switch.png",
     },
     {
       title: "DC Power Supply",
       description:
         "Created a 120V AC to 3V DC supply with ±0.1V tolerance using a bridge rectifier.",
-      link: "https://github.com/your-dc-project",
+      link: "https://github.com/Ahmad-Molhim/-AC-DC-Power-Supply-Design",
       image: "/images/ACDC.png",
     },
     {
       title: "MOSFET-Based XOR Gate Design and Testing",
       description:
         "Designed a CMOS-based XOR gate with optimized PMOS/NMOS sizing for balanced timing.",
-      link: "https://github.com/your-electrical-project",
+      link: "https://github.com/Ahmad-Molhim/MOSFET-Based-XOR-Gate",
       image: "/images/XOR.png",
     },
     {
@@ -50,7 +50,7 @@ const projectData = {
       title: "PONG GAME",
       description:
         "Developed a real-time Pong game on FPGA using VHDL, featuring VGA video output, FSM-based game logic, and responsive button input.",
-      link: "https://github.com/your-imu-project",
+      link: "https://github.com/Ahmad-Molhim/FPGA-PONG-GAME",
       image: "/images/Pong.png",
     },
   ],
@@ -59,7 +59,7 @@ const projectData = {
       title: "3D Spatial Scanner",
       description:
         "A real-time 3D spatial scanner built with an MSP432 microcontroller, ToF sensor, and stepper motor, featuring UART-based data visualization in Python.",
-      link: "https://github.com/your-motor-firmware",
+      link: "https://github.com/Ahmad-Molhim/3D-Spatial-Scanner",
       image: "/images/SpatialMapping.png",
     },
     {
